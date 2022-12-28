@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="quiz.css">
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Bona+Nova' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet'>
+        <script type="text/javascript" src="quiz.js"></script>
+
+        <title>Главная страница</title>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Почему Уолтер Уайт - сигма-мужчина?</h2>
+            <div><hr><input type="radio" name="question_1"><b>У него есть жена</b></input><br></div>
+            <div><input type="radio" name="question_1"><b>Из-за рака лёгких</b></input><br></div>
+            <div><input type="radio" name="question_1"><b>Он захотел обеспечить будущее семьи</b></input><br></div>
+            <div><input type="radio" name="question_1"><b>Он уволился со своей работы</b></input><br></div>
+            <div><input type="radio" name="question_1" id="cor_1"><b>Он перестал бояться и начал жить</b></input></div>
+            <button class="quiz-but" onclick="next(1)"><b></b>Дальше</button>
+        </div>
+        <div class="container" style="display:none">
+            <h2>Каким качеством сигма-мужчины обладает Патрик Бейтмен?</h2>
+            <div><hr><input type="radio" name="question_2"><b>Высокомерность</b></input></div>
+            <div><input type="radio" name="question_2"><b>Mental illness</b></input></div>
+            <div><input type="radio" name="question_2" id="cor_2"><b>Самодостаточность</b></input></div>
+            <div><input type="radio" name="question_2"><b>Красота</b></input></div>
+            <div><input type="radio" name="question_2"><b>Расчётливость</b></input></div>
+            <button class="quiz-but" onclick="next(2)"><b>Дальше</b></button>
+        </div>
+        <div class="container" style="display:none">
+            <h2>Что побудило Трэвиса Бикля стать сигмой?</h2>
+            <div><hr><input type="radio" name="question_3"><b>Беспорядок на улицах города</b></input></div>
+            <div><input type="radio" name="question_3"><b>Отказ любимой ему женщины</b></input></div>
+            <div><input type="radio" name="question_3"><b>Желание стать лучше</b></input></div>
+            <div><input type="radio" name="question_3"><b>Бессонница</b></input></div>
+            <div><input type="radio" name="question_3" id="cor_3"><b>Всё вышеперечисленное</b></input></div>
+            <button class="quiz-but" onclick="next(3)"><b>Дальше</b></button>
+        </div>
+        <div class="container" style="display:none">
+            <h2>Томас Шелби - нонкомформист. Что это означает?</h2>
+            <div><hr><input type="radio" name="question_4"><b>Ну... эээ...</b></input></div>
+            <div><input type="radio" name="question_4" id="cor_4"><b>Он Сигма!</b></input></div>
+            <div><input type="radio" name="question_4"><b>Щас, дайте подумать...</b></input></div>
+            <div><input type="radio" name="question_4"><b>Без понятия</b></input></div>
+            <div><input type="radio" name="question_4"><b>Я не знаю</b></input></div>
+            <button class="quiz-but" onclick="next(4)"><b>Далее</b></button>
+        </div>
+        <div class="container" style="display:none">
+            <h2>Спорите ли вы с людьми, чтобы доказать свою позицию?</h2>
+            <div><hr><input type="radio" name="question_5"><b>Абсолютно всегда.</b></input></div>
+            <div><input type="radio" name="question_5" ><b>Да, часто!</b></input></div>
+            <div><input type="radio" name="question_5"><b>Ну бывает иногда...</b></input></div>
+            <div><input type="radio" name="question_5" id="cor_5"><b>Я вообще с людьми не разговариваю</b></input></div>
+            <div><input type="radio" name="question_5"><b>Нет</b></input></div>
+            <button class="quiz-but" onclick="result()"><b>Завершить</b></button>
+        </div>
+    </body>
+</html>
